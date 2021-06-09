@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $(".total").text("Total: $0 /month");
+    $(".total").text("Total: ₹0 /month");
   });
 
 // $('input,select').on('change', refreshTotal);
