@@ -1,0 +1,51 @@
+<html>
+    <head>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../js/calculator.js"></script>
+    <link rel="stylesheet" href="../css/calculator.css">
+<div class="container">
+    <header>Car Insurance Calculator</header>
+    <ul>
+      <li><form id="gender"><legend>gender</legend> <fieldset>
+      <input type="radio" name="gender" value="20" id="Female" class="firstInput css-checkbox" onchange="refreshTotal();"/>
+      <label class="css-label" for="Female">Female</label>
+         <input type="radio" name="gender" value="30" id="Male" class="css-checkbox" />
+         <label class="css-label" for="Male">Male</label></fieldset>
+          </form>
+          </li>
+      <li>
+      <form id="age"><legend>Age</legend><fieldset>
+        <input type="radio" id="sixteen" name="age" value="40" class="firstInput css-checkbox" onchange="refreshTotal();"/>
+        <label class="css-label" for="sixteen">16-25</label>
+          <input id="twentysix" type="radio" name="age" value="30" class="css-checkbox" />
+          <label class="css-label" for="twentysix">26-34</label>
+            <input type="radio" id="thirtyfive" name="age" value="20" class="css-checkbox"  />
+            <label class="css-label" for="thirtyfive">35-50</label>
+              <input type="radio" name="age" id="fifty" value="15" class="css-checkbox" />
+              <label class="css-label" for="fifty">50+</label></fieldset>
+              </form>
+              </li>
+      <li>Car Color
+        <select name="color" id="car" onchange="refreshTotal();">
+          <option selected value="0"> -- select an option -- </option>
+          <option value="80">red</option>
+          <option value="50">silver</option>
+          <option value="50">black</option>
+          <option value="30">white</option>
+          <option value="50">other</option>
+        </select>
+      </li>
+      <li>Car Year
+        <select name="year" id="year" onchange="refreshTotal();">
+        <option selected value="0"> -- select an option -- </option>
+          <option value="60">2015+</option>
+          <option value="40">2000 - 2015</option>
+          <option value="60">1999 or before </option>
+        </select></li>
+        
+      </ul>
+      <hr>
+      <p class="total">Total:</p>
+    </div>
+    </head>
+</html>
